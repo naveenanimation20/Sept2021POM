@@ -1,0 +1,26 @@
+POM: Design Pattern
+DD : 
+Libs: Generic functions
+TDD
+===> Hybrid FW + POM (SRP)
+
+POM: Martin Folwer
+Page: 
+- for every page in web/mobile app, we need to create separate page java class.
+- never use assertions in page class.
+- page actions need to provide the page behaviour.
+- page locators(BY) should be private and will be accessed via public page actions.
+
+Test:
+-- have to use a test client : TestNG/Junit/Pytest/Nunit/Jasmine/Mocha
+-- assertions should be written in test class
+-- never use driver apis in test class
+
+
+KD + DD => Hybrid 
+1. Open browser
+2. Enter url
+3. Enter un + DD
+4. Enter pwd
+5. Click on login
+
