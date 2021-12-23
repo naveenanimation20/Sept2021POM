@@ -48,6 +48,8 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
 		extentReports.setSystemInfo("Author", "Naveen AutomationLabs");
 		extentReports.setSystemInfo("Build#", "1.1");
 		extentReports.setSystemInfo("Team", "Ecomm");
+		extentReports.setSystemInfo("ENV NAME", System.getProperty("env"));
+
 
 		return extentReports;
 	}

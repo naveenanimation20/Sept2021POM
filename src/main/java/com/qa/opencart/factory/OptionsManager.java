@@ -17,8 +17,15 @@ public class OptionsManager {
 
 	public ChromeOptions getChromeOptions() {
 		co = new ChromeOptions();
-		co.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-		co.addArguments("--no-sandbox"); // Bypass OS security model
+		//co.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+		//co.addArguments("--no-sandbox"); // Bypass OS security model
+		
+//		if(Boolean.parseBoolean("remote")) {
+//			co.setPlatformName("Linux");
+//			co.setBrowserVersion("94");
+//			
+//		}
+		
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) co.addArguments("--headless");
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) co.addArguments("--incognito");
 		return co;

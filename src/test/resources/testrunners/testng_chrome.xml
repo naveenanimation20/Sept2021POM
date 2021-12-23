@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Open Cart Test Suite" verbose="4" thread-count="4"
+<suite name="Open Cart Test Suite" verbose="4" thread-count="3"
 	parallel="tests">
 
 	<listeners>
@@ -30,13 +30,6 @@
 		</classes>
 	</test>
 
-	<test name="Open Cart Login Page Test - ff - 83">
-		<parameter name="browser" value="firefox" />
-		<parameter name="browserversion" value="83" />
-		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
-		</classes>
-	</test>
 
 	<test name="Open Cart Accounts Page Test - ch - 90">
 		<parameter name="browser" value="chrome" />
